@@ -1,4 +1,4 @@
-package com.example.qp_assessment;
+package com.grocery.project;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
