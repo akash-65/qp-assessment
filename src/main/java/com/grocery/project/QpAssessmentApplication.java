@@ -1,4 +1,4 @@
-package com.example.qp_assessment;
+package com.grocery.project;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

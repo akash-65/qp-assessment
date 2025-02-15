@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "2969a3c9-7fa0-4901-b480-d790eca5eafe",
+		"name": "QP-Assesment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "41721314"
+	},
+	"item": [
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Create Grocery",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Apple 2\",\r\n  \"price\": 150,\r\n  \"category\": \"Fruits\",\r\n  \"stock\": 100\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/admin/items"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Grocery",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/admin/items"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Grocery Item",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/api/admin/items/2"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Grocery Item",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Apple Updated\",\r\n  \"price\": 150,\r\n  \"category\": \"Fruits\",\r\n  \"stock\": 100\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/admin/items/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Get All Grocery",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/api/user/items"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"items\": [\r\n    { \"id\": 1, \"quantity\": 2 },\r\n    { \"id\": 2, \"quantity\": 1 }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/api/user/orders"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
